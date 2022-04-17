@@ -1,0 +1,112 @@
+.buttons{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px!important;
+}
+.btn{
+    position:absolute;
+    top:0;
+    left: 0;
+    transform: translate(50%,500%);
+    width: 20vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 2.5vw;
+    border-radius: 20px;
+
+}
+.timerDisplay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 400%);
+    font-size: 10vw!important;
+    display: grid;
+    grid-template-columns: auto;
+    color: ivory !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+    .timerDisplay{
+        transform: translate(15%, 400%);
+    }
+    .btn{
+        transform: translate(0%,500%);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px) {
+    .timerDisplay{
+        transform: translate(15%, 300%);
+    }
+    .btn{
+        transform: translate(0%,500%);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .timerDisplay{
+        transform: translate(15%, 100%);
+    }
+    .btn{
+        width: 27vw; 
+        transform: translate(50%,500%);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .timerDisplay{
+        transform: translate(15%, 100%);
+    }
+    .btn{
+        width: 21vw; 
+        transform: translate(50%,500%);
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .timerDisplay{
+        transform: translate(15%, 100%);
+    }
+    .btn{
+        width: 24vw; 
+        transform: translate(50%,500%);
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1173px) {
+    .timerDisplay{
+        transform: translate(15%, 100%);
+    }
+    .btn{
+        width: 25vw; 
+        transform: translate(50%,500%);
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .timerDisplay{
+        transform: translate(10%, 100%);
+    }
+    .btn{
+        width: 21vw; 
+        transform: translate(0%,500%);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .timerDisplay{
+        transform: translate(10%, 100%);
+    }
+    .btn{
+        width: 16vw; 
+        transform: translate(100%,500%);
+    }
+}
